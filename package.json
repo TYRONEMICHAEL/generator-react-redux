@@ -1,0 +1,67 @@
+{
+  "name": "generator-react-redux",
+  "version": "0.1",
+  "description": "React with Redux module template for authoring with ES6+, Babel, Tape and npm scripts",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "https://github.com/bucaran/generator-react-redux",
+  "author": {
+    "name": "Tyrone Michael Avnit",
+    "email": "tyronemichael@gmail.com",
+    "url": "https://github.com/TYRONEMICHAEL"
+  },
+  "scripts": {
+    "test": "babel-node test/*.js | tspec",
+    "coverage": "babel-node node_modules/.bin/isparta cover --report text test/*.js",
+    "coveralls": "npm run coverage && coveralls < coverage/lcov.info && rimraf ./coverage",
+    "deploy": "git pull -q --rebase origin master && git push -q origin master"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "boilerplate",
+    "es6",
+    "es2015",
+    "node",
+    "starter",
+    "kit",
+    "transpile",
+    "6to5",
+    "babel",
+    "yeoman",
+    "plugin",
+    "boilerplate",
+    "template",
+    "scaffold",
+    "module",
+    "node_module",
+    "tape",
+    "tap",
+    "coveralls",
+    "coveralls.io",
+    "travis",
+    "javascript",
+    "cli",
+    "npm",
+    "npm scripts",
+    "productivity",
+    "redux",
+    "react"
+  ],
+  "dependencies": {
+    "yeoman-generator": "*",
+    "yosay": "*"
+  },
+  "devDependencies": {
+    "tape": "*",
+    "babel": "*",
+    "isparta": "*",
+    "tap-spec": "*",
+    "eslint": "^1.2.1",
+    "babel-eslint": "^4.0.10",
+    "eslint-config-airbnb": "0.0.8",
+    "eslint-plugin-react": "^3.2.3"
+  }
+}
